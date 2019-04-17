@@ -9,17 +9,17 @@ func main() {
 	wf := sp.NewWorkflow("DS_CPSign", 4)
 
 	// Create target datasets
-	pythonProc1 := wf.NewProc("Proc1", "python3 ../db_targets.py ../database ../targets_folder; echo 'done' > {o:donefile}")
-	pythonProc1.SetOut("donefile", "log1")
+	createDatasets := wf.NewProc("create_datasets", "python3 ../db_targets.py ../database ../targets_folder; echo 'done' > {o:donefile}")
+	createDatasets.SetOut("donefile", "targets_folder.done")
 
 	// Glob target datasets
-	targetsDirectory := spc.NewFileGlobberDependent(wf, "Targets_in_Dir", "./targets_folder/*.json")
-	targetsDirectory.InDependency().From(pythonProc1.Out("donefile"))
+	globDatasets := spc.NewFileGlobberDependent(wf, "glob_datasets", "./targets_folder/*.json")
+	globDatasets.InDependency().From(createDatasets.Out("donefile"))
 
 	// Balance datasets
-	pythonProc2 := wf.NewProc("Proc2", "python3 ../balancing_targets.py {i:inpfiles} ../targets_folder; echo 'done' > {o:done2file}")
-	pythonProc2.In("inpfiles").From(targetsDirectory.Out())
-	pythonProc2.SetOut("done2file", "{i:inpfiles|%.json}_done")
+	balanceDatasets := wf.NewProc("balance_datasets", "python3 ../balancing_targets.py {i:inpfiles} ../targets_folder; echo 'done' > {o:done2file}")
+	balanceDatasets.In("inpfiles").From(globDatasets.Out())
+	balanceDatasets.SetOut("done2file", "{i:inpfiles|%.json}.done")
 
 	wf.Run()
 }
