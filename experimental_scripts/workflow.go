@@ -13,13 +13,15 @@ func main() {
 	createDatasets.SetOut("outdir", "targets_folder")
 
 	// Glob target datasets
-	globDatasets := spc.NewFileGlobberDependent(wf, "glob_datasets", "./targets_folder/*.json")
+	globDatasets := spc.NewFileGlobberDependent(wf, "glob_datasets", "./targets_folder/*.tsv")
 	globDatasets.InDependency().From(createDatasets.Out("outdir"))
 
 	// Balance datasets
-	balanceDatasets := wf.NewProc("balance_datasets", "python3 ../balancing_targets.py {i:inpfiles} ../targets_folder; echo 'done' > {o:done2file}")
-	balanceDatasets.In("inpfiles").From(globDatasets.Out())
-	balanceDatasets.SetOut("done2file", "{i:inpfiles|%.json}.done")
+	balanceDatasets := wf.NewProc("balance_datasets", "python3 ../balancing_targets.py --dbfile=../database --infile={i:infile} --outfile={o:outfile} --nonbinders-dir={o:nonbinders_dir}")
+	balanceDatasets.In("infile").From(globDatasets.Out())
+	balanceDatasets.SetOut("outfile", "balanced_targets_folder/{i:infile|basename|%.tsv}.balanced.tsv")
+	balanceDatasets.SetOut("nonbinders_dir", "only_non_binders")
 
+	// Run workflow
 	wf.Run()
 }
