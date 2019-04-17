@@ -1,23 +1,27 @@
 package main
 
 import (
-		sp "github.com/scipipe/scipipe"
-		spc "github.com/scipipe/scipipe/components"
-		)
-		
+	sp "github.com/scipipe/scipipe"
+	spc "github.com/scipipe/scipipe/components"
+)
+
 func main() {
+	wf := sp.NewWorkflow("DS_CPSign", 4)
 
-wf := sp.NewWorkflow("DS_CPSign", 4)
+	// Create target datasets
+	createDatasets := wf.NewProc("create_datasets", "python3 ../db_targets.py --database=../database --outdir={o:outdir}")
+	createDatasets.SetOut("outdir", "all_targets")
 
-pythonProc1 := wf.NewProc("Proc1", "python3 ../db_targets.py ../database ../targets_folder; echo 'done' > {o:donefile}")
-targetsDirectory := spc.NewFileGlobberDependent(wf, "Targets_in_Dir", "./targets_folder/*.json")
-pythonProc2 := wf.NewProc("Proc2", "python3 ../balancing_targets.py {i:inpfiles} ../targets_folder; echo 'done' > {o:done2file}")
+	// Glob target datasets
+	globDatasets := spc.NewFileGlobberDependent(wf, "glob_datasets", "./all_targets/*.tsv")
+	globDatasets.InDependency().From(createDatasets.Out("outdir"))
 
+	// Balance datasets
+	balanceDatasets := wf.NewProc("balance_datasets", "python3 ../balancing_targets.py --dbfile=../database --infile={i:infile} --outfile={o:outfile} --nonbinders-dir={o:nonbinders_dir}")
+	balanceDatasets.In("infile").From(globDatasets.Out())
+	balanceDatasets.SetOut("outfile", "balanced_targets/{i:infile|basename|%.tsv}.balanced.tsv")
+	balanceDatasets.SetOut("nonbinders_dir", "only_non_binding_targets")
 
-pythonProc1.SetOut("donefile", "log1")
-targetsDirectory.InDependency().From(pythonProc1.Out("donefile"))
-pythonProc2.In("inpfiles").From(targetsDirectory.Out())
-pythonProc2.SetOut("done2file", "{i:inpfiles|%.json}_done")
-
-wf.Run()
+	// Run workflow
+	wf.Run()
 }
