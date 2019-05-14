@@ -18,6 +18,7 @@ with open(args.database, 'r') as dbfile:
         df.iloc[i, 0] = df.iloc[i, 0].replace('(','_')
         df.iloc[i, 0] = df.iloc[i, 0].replace(')','_')
         df.iloc[i, 0] = df.iloc[i, 0].replace("'",'')
+        df.iloc[i, 0] = df.iloc[i, 0].replace(">",'')
 
     for i in range(0, df.shape[0]):
         if df.iloc[i, 0] not in D:
