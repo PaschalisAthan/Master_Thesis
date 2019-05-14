@@ -3,24 +3,32 @@ import numpy as np
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import seaborn as sns
+import argparse
 
+parser = argparse.ArgumentParser(description = 'Get 4 AUC violin plots')
+parser.add_argument('--file1', help = 'File with AUCs from method 1')
+parser.add_argument('--file2', help = 'File with AUCs from method 2')
+parser.add_argument('--file3', help = 'File with AUCs from method 3')
+parser.add_argument('--file4', help = 'File with AUCs from method 4')
+
+args = parser.parse_args()
 L1 = []
 L2 = []
 L3 = []
 L4 = []
-with open('AUC_1_balanced.json', 'r') as f1:
+with open(args.file1, 'r') as f1:
     df1 = pd.read_csv(f1, delim_whitespace = True, lineterminator = '\n', header = None)
     for i in range(0, df1.shape[0]):
         L1.append(df1.iloc[i,1])
-with open('AUC_2_.json', 'r') as f2:
+with open(args.file2, 'r') as f2:
     df2 = pd.read_csv(f2, delim_whitespace = True, lineterminator = '\n', header = None)
     for i in range(0, df2.shape[0]):
         L2.append(df2.iloc[i,1])
-with open('AUC_3_balanced.json', 'r') as f3:
+with open(args.file3, 'r') as f3:
     df3 = pd.read_csv(f3, delim_whitespace = True, lineterminator = '\n', header = None)
     for i in range(0, df3.shape[0]):
         L3.append(df3.iloc[i,1])
-with open('AUC_4_.json', 'r') as f4:
+with open(args.file4, 'r') as f4:
     df4 = pd.read_csv(f4, delim_whitespace = True, lineterminator = '\n', header = None)
     for i in range(0, df4.shape[0]):
         L4.append(df4.iloc[i,1])
