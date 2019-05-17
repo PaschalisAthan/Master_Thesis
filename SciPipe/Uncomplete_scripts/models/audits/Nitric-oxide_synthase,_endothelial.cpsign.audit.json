@@ -1,0 +1,30 @@
+{
+    "ID": "yjatwe7uk9oe3uvghb4f",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Nitric-oxide_synthase,_endothelial.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Nitric-oxide_synthase,_endothelial.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Nitric-oxide_synthase,_endothelial.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Nitric-oxide_synthase,_endothelial 2\u003e process/log_files/Nitric-oxide_synthase,_endothelial.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Nitric-oxide_synthase,_endothelial.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:42:31.429944555+02:00",
+    "FinishTime": "2019-05-15T09:42:37.078594525+02:00",
+    "ExecTimeNS": 5648649937,
+    "OutFiles": {
+        "logfile": "training_log/Nitric-oxide_synthase,_endothelial.log",
+        "modelname": "Nitric-oxide_synthase,_endothelial",
+        "modelout": "models/Nitric-oxide_synthase,_endothelial.cpsign",
+        "statusfile": "process/log_files/Nitric-oxide_synthase,_endothelial.done"
+    },
+    "Upstream": {
+        "precomputed/Nitric-oxide_synthase,_endothelial.precomp": {
+            "ID": "ujwirghl92v5b7ecb3q0",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

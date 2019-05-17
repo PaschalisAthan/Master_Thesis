@@ -1,0 +1,30 @@
+{
+    "ID": "d90ya8ixh7ndgl9np0hk",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Bile_acid_receptor_FXR.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Bile_acid_receptor_FXR.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Bile_acid_receptor_FXR.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Bile_acid_receptor_FXR 2\u003e process/log_files/Bile_acid_receptor_FXR.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Bile_acid_receptor_FXR.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:49:05.563913949+02:00",
+    "FinishTime": "2019-05-15T08:49:14.33021205+02:00",
+    "ExecTimeNS": 8766298064,
+    "OutFiles": {
+        "logfile": "training_log/Bile_acid_receptor_FXR.log",
+        "modelname": "Bile_acid_receptor_FXR",
+        "modelout": "models/Bile_acid_receptor_FXR.cpsign",
+        "statusfile": "process/log_files/Bile_acid_receptor_FXR.done"
+    },
+    "Upstream": {
+        "precomputed/Bile_acid_receptor_FXR.precomp": {
+            "ID": "7d3f785rpnytz6c28b6e",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

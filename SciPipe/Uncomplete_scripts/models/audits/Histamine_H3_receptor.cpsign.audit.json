@@ -1,0 +1,30 @@
+{
+    "ID": "3f2puoj493202mncdnx3",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Histamine_H3_receptor.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Histamine_H3_receptor.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Histamine_H3_receptor.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Histamine_H3_receptor 2\u003e process/log_files/Histamine_H3_receptor.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Histamine_H3_receptor.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:22:15.143560982+02:00",
+    "FinishTime": "2019-05-15T09:24:05.622582137+02:00",
+    "ExecTimeNS": 110479021108,
+    "OutFiles": {
+        "logfile": "training_log/Histamine_H3_receptor.log",
+        "modelname": "Histamine_H3_receptor",
+        "modelout": "models/Histamine_H3_receptor.cpsign",
+        "statusfile": "process/log_files/Histamine_H3_receptor.done"
+    },
+    "Upstream": {
+        "precomputed/Histamine_H3_receptor.precomp": {
+            "ID": "rmwivhe496toe00a4ijk",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ID": "pflhmrlebe0ywrl5zwj5",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Glutathione_reductase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Glutathione_reductase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Glutathione_reductase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Glutathione_reductase 2\u003e process/log_files/Glutathione_reductase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Glutathione_reductase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:19:38.367718876+02:00",
+    "FinishTime": "2019-05-15T09:19:40.632947133+02:00",
+    "ExecTimeNS": 2265228143,
+    "OutFiles": {
+        "logfile": "training_log/Glutathione_reductase.log",
+        "modelname": "Glutathione_reductase",
+        "modelout": "models/Glutathione_reductase.cpsign",
+        "statusfile": "process/log_files/Glutathione_reductase.done"
+    },
+    "Upstream": {
+        "precomputed/Glutathione_reductase.precomp": {
+            "ID": "xy6yg6avy2ewotesffc0",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

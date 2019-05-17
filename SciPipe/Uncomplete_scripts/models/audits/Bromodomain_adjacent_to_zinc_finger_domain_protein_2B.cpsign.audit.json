@@ -1,0 +1,30 @@
+{
+    "ID": "qsc9exdge28li0zs9xry",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Bromodomain_adjacent_to_zinc_finger_domain_protein_2B 2\u003e process/log_files/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:49:43.590886797+02:00",
+    "FinishTime": "2019-05-15T08:49:45.618673422+02:00",
+    "ExecTimeNS": 2027786556,
+    "OutFiles": {
+        "logfile": "training_log/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.log",
+        "modelname": "Bromodomain_adjacent_to_zinc_finger_domain_protein_2B",
+        "modelout": "models/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.cpsign",
+        "statusfile": "process/log_files/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.done"
+    },
+    "Upstream": {
+        "precomputed/Bromodomain_adjacent_to_zinc_finger_domain_protein_2B.precomp": {
+            "ID": "rsizj3a4zibfxor7o6ob",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

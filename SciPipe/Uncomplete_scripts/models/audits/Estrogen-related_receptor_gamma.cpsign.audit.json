@@ -1,0 +1,30 @@
+{
+    "ID": "m3fkfpcwzzl2woj70sd8",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Estrogen-related_receptor_gamma.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Estrogen-related_receptor_gamma.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Estrogen-related_receptor_gamma.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Estrogen-related_receptor_gamma 2\u003e process/log_files/Estrogen-related_receptor_gamma.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Estrogen-related_receptor_gamma.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:13:21.262055761+02:00",
+    "FinishTime": "2019-05-15T09:13:22.926262675+02:00",
+    "ExecTimeNS": 1664206850,
+    "OutFiles": {
+        "logfile": "training_log/Estrogen-related_receptor_gamma.log",
+        "modelname": "Estrogen-related_receptor_gamma",
+        "modelout": "models/Estrogen-related_receptor_gamma.cpsign",
+        "statusfile": "process/log_files/Estrogen-related_receptor_gamma.done"
+    },
+    "Upstream": {
+        "precomputed/Estrogen-related_receptor_gamma.precomp": {
+            "ID": "hjajrpgd3f58bm7hvjns",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

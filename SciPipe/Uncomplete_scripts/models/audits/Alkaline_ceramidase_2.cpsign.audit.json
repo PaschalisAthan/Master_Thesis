@@ -1,0 +1,30 @@
+{
+    "ID": "2aejghg04do393qdd3no",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Alkaline_ceramidase_2.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Alkaline_ceramidase_2.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Alkaline_ceramidase_2.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Alkaline_ceramidase_2 2\u003e process/log_files/Alkaline_ceramidase_2.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Alkaline_ceramidase_2.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:45:27.780948904+02:00",
+    "FinishTime": "2019-05-15T08:45:29.552571934+02:00",
+    "ExecTimeNS": 1771623004,
+    "OutFiles": {
+        "logfile": "training_log/Alkaline_ceramidase_2.log",
+        "modelname": "Alkaline_ceramidase_2",
+        "modelout": "models/Alkaline_ceramidase_2.cpsign",
+        "statusfile": "process/log_files/Alkaline_ceramidase_2.done"
+    },
+    "Upstream": {
+        "precomputed/Alkaline_ceramidase_2.precomp": {
+            "ID": "hiqquco5az8tkrpc6py8",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

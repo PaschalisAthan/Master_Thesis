@@ -1,0 +1,30 @@
+{
+    "ID": "wu14b8k6twxlp6nar2be",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Granzyme_B.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Granzyme_B.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Granzyme_B.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Granzyme_B 2\u003e process/log_files/Granzyme_B.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Granzyme_B.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:20:16.894562142+02:00",
+    "FinishTime": "2019-05-15T09:20:18.575525991+02:00",
+    "ExecTimeNS": 1680963804,
+    "OutFiles": {
+        "logfile": "training_log/Granzyme_B.log",
+        "modelname": "Granzyme_B",
+        "modelout": "models/Granzyme_B.cpsign",
+        "statusfile": "process/log_files/Granzyme_B.done"
+    },
+    "Upstream": {
+        "precomputed/Granzyme_B.precomp": {
+            "ID": "wyhpll41t3f1es2upy1q",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

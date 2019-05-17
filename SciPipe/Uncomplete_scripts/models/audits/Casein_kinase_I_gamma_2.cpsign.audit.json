@@ -1,0 +1,30 @@
+{
+    "ID": "yhnvdsdw5vegdbq7akg3",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Casein_kinase_I_gamma_2.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Casein_kinase_I_gamma_2.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Casein_kinase_I_gamma_2.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Casein_kinase_I_gamma_2 2\u003e process/log_files/Casein_kinase_I_gamma_2.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Casein_kinase_I_gamma_2.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:59:07.99996751+02:00",
+    "FinishTime": "2019-05-15T08:59:10.13327406+02:00",
+    "ExecTimeNS": 2133306479,
+    "OutFiles": {
+        "logfile": "training_log/Casein_kinase_I_gamma_2.log",
+        "modelname": "Casein_kinase_I_gamma_2",
+        "modelout": "models/Casein_kinase_I_gamma_2.cpsign",
+        "statusfile": "process/log_files/Casein_kinase_I_gamma_2.done"
+    },
+    "Upstream": {
+        "precomputed/Casein_kinase_I_gamma_2.precomp": {
+            "ID": "wvp5aklpx63i10a8lviz",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

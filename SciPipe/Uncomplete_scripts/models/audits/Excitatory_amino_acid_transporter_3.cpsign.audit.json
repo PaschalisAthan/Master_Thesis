@@ -1,0 +1,30 @@
+{
+    "ID": "p1m4d7z4nhkffe2zopo0",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Excitatory_amino_acid_transporter_3.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Excitatory_amino_acid_transporter_3.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Excitatory_amino_acid_transporter_3.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Excitatory_amino_acid_transporter_3 2\u003e process/log_files/Excitatory_amino_acid_transporter_3.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Excitatory_amino_acid_transporter_3.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:14:36.513799797+02:00",
+    "FinishTime": "2019-05-15T09:14:38.446103376+02:00",
+    "ExecTimeNS": 1932289797,
+    "OutFiles": {
+        "logfile": "training_log/Excitatory_amino_acid_transporter_3.log",
+        "modelname": "Excitatory_amino_acid_transporter_3",
+        "modelout": "models/Excitatory_amino_acid_transporter_3.cpsign",
+        "statusfile": "process/log_files/Excitatory_amino_acid_transporter_3.done"
+    },
+    "Upstream": {
+        "precomputed/Excitatory_amino_acid_transporter_3.precomp": {
+            "ID": "ubcc0cc0s2s5uv84ieqo",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

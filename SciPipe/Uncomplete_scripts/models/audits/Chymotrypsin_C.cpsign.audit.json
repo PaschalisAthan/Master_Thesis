@@ -1,0 +1,30 @@
+{
+    "ID": "2cyvcgnysknb009y8w7u",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Chymotrypsin_C.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Chymotrypsin_C.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Chymotrypsin_C.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Chymotrypsin_C 2\u003e process/log_files/Chymotrypsin_C.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Chymotrypsin_C.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:01:42.758622177+02:00",
+    "FinishTime": "2019-05-15T09:01:45.783326416+02:00",
+    "ExecTimeNS": 3024704196,
+    "OutFiles": {
+        "logfile": "training_log/Chymotrypsin_C.log",
+        "modelname": "Chymotrypsin_C",
+        "modelout": "models/Chymotrypsin_C.cpsign",
+        "statusfile": "process/log_files/Chymotrypsin_C.done"
+    },
+    "Upstream": {
+        "precomputed/Chymotrypsin_C.precomp": {
+            "ID": "jy7ej4cfmpsjfylmz32h",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

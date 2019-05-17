@@ -1,0 +1,30 @@
+{
+    "ID": "sb5x3l50q1bwoa80gee3",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Isocitrate_dehydrogenase_[NADP]_cytoplasmic 2\u003e process/log_files/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:27:35.640557897+02:00",
+    "FinishTime": "2019-05-15T09:27:37.039655831+02:00",
+    "ExecTimeNS": 1399097938,
+    "OutFiles": {
+        "logfile": "training_log/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.log",
+        "modelname": "Isocitrate_dehydrogenase_[NADP]_cytoplasmic",
+        "modelout": "models/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.cpsign",
+        "statusfile": "process/log_files/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.done"
+    },
+    "Upstream": {
+        "precomputed/Isocitrate_dehydrogenase_[NADP]_cytoplasmic.precomp": {
+            "ID": "nktsia55o90wt0enrnwi",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

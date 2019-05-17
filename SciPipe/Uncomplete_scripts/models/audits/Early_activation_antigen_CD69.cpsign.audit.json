@@ -1,0 +1,30 @@
+{
+    "ID": "qpnntv21f2qo0qi7hhrh",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Early_activation_antigen_CD69.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Early_activation_antigen_CD69.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Early_activation_antigen_CD69.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Early_activation_antigen_CD69 2\u003e process/log_files/Early_activation_antigen_CD69.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Early_activation_antigen_CD69.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:11:57.260167529+02:00",
+    "FinishTime": "2019-05-15T09:11:58.825329622+02:00",
+    "ExecTimeNS": 1565162031,
+    "OutFiles": {
+        "logfile": "training_log/Early_activation_antigen_CD69.log",
+        "modelname": "Early_activation_antigen_CD69",
+        "modelout": "models/Early_activation_antigen_CD69.cpsign",
+        "statusfile": "process/log_files/Early_activation_antigen_CD69.done"
+    },
+    "Upstream": {
+        "precomputed/Early_activation_antigen_CD69.precomp": {
+            "ID": "l0exuya38byxpgtdpovg",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

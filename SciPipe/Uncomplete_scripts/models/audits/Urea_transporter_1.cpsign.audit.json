@@ -1,0 +1,30 @@
+{
+    "ID": "qn8ex6efzrlf438afsn6",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Urea_transporter_1.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Urea_transporter_1.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Urea_transporter_1.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Urea_transporter_1 2\u003e process/log_files/Urea_transporter_1.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Urea_transporter_1.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:17:51.620191957+02:00",
+    "FinishTime": "2019-05-15T10:17:53.248986497+02:00",
+    "ExecTimeNS": 1628794518,
+    "OutFiles": {
+        "logfile": "training_log/Urea_transporter_1.log",
+        "modelname": "Urea_transporter_1",
+        "modelout": "models/Urea_transporter_1.cpsign",
+        "statusfile": "process/log_files/Urea_transporter_1.done"
+    },
+    "Upstream": {
+        "precomputed/Urea_transporter_1.precomp": {
+            "ID": "3uqv6g2k6xqcnn0m5358",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

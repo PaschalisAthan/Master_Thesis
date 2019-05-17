@@ -1,0 +1,30 @@
+{
+    "ID": "w3qz6hyicyc2f8u74pa7",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Oxoeicosanoid_receptor_1.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Oxoeicosanoid_receptor_1.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Oxoeicosanoid_receptor_1.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Oxoeicosanoid_receptor_1 2\u003e process/log_files/Oxoeicosanoid_receptor_1.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Oxoeicosanoid_receptor_1.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:44:15.997469707+02:00",
+    "FinishTime": "2019-05-15T09:44:17.539189494+02:00",
+    "ExecTimeNS": 1541719802,
+    "OutFiles": {
+        "logfile": "training_log/Oxoeicosanoid_receptor_1.log",
+        "modelname": "Oxoeicosanoid_receptor_1",
+        "modelout": "models/Oxoeicosanoid_receptor_1.cpsign",
+        "statusfile": "process/log_files/Oxoeicosanoid_receptor_1.done"
+    },
+    "Upstream": {
+        "precomputed/Oxoeicosanoid_receptor_1.precomp": {
+            "ID": "y6h9sihnjzkgdwo8ydas",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

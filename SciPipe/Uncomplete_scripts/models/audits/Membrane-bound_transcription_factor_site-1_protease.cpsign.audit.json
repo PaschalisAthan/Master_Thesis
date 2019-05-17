@@ -1,0 +1,30 @@
+{
+    "ID": "2qogvxl9holyew5ibo1o",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Membrane-bound_transcription_factor_site-1_protease.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Membrane-bound_transcription_factor_site-1_protease.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Membrane-bound_transcription_factor_site-1_protease.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Membrane-bound_transcription_factor_site-1_protease 2\u003e process/log_files/Membrane-bound_transcription_factor_site-1_protease.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Membrane-bound_transcription_factor_site-1_protease.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:36:48.127726082+02:00",
+    "FinishTime": "2019-05-15T09:36:49.874305857+02:00",
+    "ExecTimeNS": 1746579757,
+    "OutFiles": {
+        "logfile": "training_log/Membrane-bound_transcription_factor_site-1_protease.log",
+        "modelname": "Membrane-bound_transcription_factor_site-1_protease",
+        "modelout": "models/Membrane-bound_transcription_factor_site-1_protease.cpsign",
+        "statusfile": "process/log_files/Membrane-bound_transcription_factor_site-1_protease.done"
+    },
+    "Upstream": {
+        "precomputed/Membrane-bound_transcription_factor_site-1_protease.precomp": {
+            "ID": "0dfatyfrtichysdt4rb6",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

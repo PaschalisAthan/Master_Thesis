@@ -1,0 +1,30 @@
+{
+    "ID": "3b79ijagsnwifwhnunwn",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Squalene_synthetase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Squalene_synthetase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Squalene_synthetase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Squalene_synthetase 2\u003e process/log_files/Squalene_synthetase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Squalene_synthetase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:07:10.589711197+02:00",
+    "FinishTime": "2019-05-15T10:07:14.714303555+02:00",
+    "ExecTimeNS": 4124592391,
+    "OutFiles": {
+        "logfile": "training_log/Squalene_synthetase.log",
+        "modelname": "Squalene_synthetase",
+        "modelout": "models/Squalene_synthetase.cpsign",
+        "statusfile": "process/log_files/Squalene_synthetase.done"
+    },
+    "Upstream": {
+        "precomputed/Squalene_synthetase.precomp": {
+            "ID": "clen7n17wyki8z44m70e",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

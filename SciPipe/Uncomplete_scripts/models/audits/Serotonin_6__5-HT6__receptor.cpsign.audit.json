@@ -1,0 +1,30 @@
+{
+    "ID": "2e9xvr317txa15s31oqi",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Serotonin_6__5-HT6__receptor.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Serotonin_6__5-HT6__receptor.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Serotonin_6__5-HT6__receptor.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Serotonin_6__5-HT6__receptor 2\u003e process/log_files/Serotonin_6__5-HT6__receptor.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Serotonin_6__5-HT6__receptor.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:02:28.734607355+02:00",
+    "FinishTime": "2019-05-15T10:04:38.145635062+02:00",
+    "ExecTimeNS": 129411027686,
+    "OutFiles": {
+        "logfile": "training_log/Serotonin_6__5-HT6__receptor.log",
+        "modelname": "Serotonin_6__5-HT6__receptor",
+        "modelout": "models/Serotonin_6__5-HT6__receptor.cpsign",
+        "statusfile": "process/log_files/Serotonin_6__5-HT6__receptor.done"
+    },
+    "Upstream": {
+        "precomputed/Serotonin_6__5-HT6__receptor.precomp": {
+            "ID": "figr0p0vhxobizy8smaq",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ID": "s8jznimw4tb5b4iqyopw",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Mitogen-activated_protein_kinase_kinase_kinase_kinase_5 2\u003e process/log_files/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:38:28.015591859+02:00",
+    "FinishTime": "2019-05-15T09:38:30.773969616+02:00",
+    "ExecTimeNS": 2758377702,
+    "OutFiles": {
+        "logfile": "training_log/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.log",
+        "modelname": "Mitogen-activated_protein_kinase_kinase_kinase_kinase_5",
+        "modelout": "models/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.cpsign",
+        "statusfile": "process/log_files/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.done"
+    },
+    "Upstream": {
+        "precomputed/Mitogen-activated_protein_kinase_kinase_kinase_kinase_5.precomp": {
+            "ID": "e2iy2cfinff0henyoee6",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

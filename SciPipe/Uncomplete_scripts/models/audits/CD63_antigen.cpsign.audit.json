@@ -1,0 +1,30 @@
+{
+    "ID": "wd2utctlmb39q8gavrwy",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/CD63_antigen.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/CD63_antigen.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/CD63_antigen.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name CD63_antigen 2\u003e process/log_files/CD63_antigen.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/CD63_antigen.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:51:14.989769561+02:00",
+    "FinishTime": "2019-05-15T08:51:16.826001201+02:00",
+    "ExecTimeNS": 1836231621,
+    "OutFiles": {
+        "logfile": "training_log/CD63_antigen.log",
+        "modelname": "CD63_antigen",
+        "modelout": "models/CD63_antigen.cpsign",
+        "statusfile": "process/log_files/CD63_antigen.done"
+    },
+    "Upstream": {
+        "precomputed/CD63_antigen.precomp": {
+            "ID": "d1r5bu9nrbp9hiedjbdg",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

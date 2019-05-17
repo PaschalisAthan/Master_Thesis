@@ -1,0 +1,30 @@
+{
+    "ID": "1r58owp3wc8zw9opd8np",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Succinate_semialdehyde_dehydrogenase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Succinate_semialdehyde_dehydrogenase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Succinate_semialdehyde_dehydrogenase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Succinate_semialdehyde_dehydrogenase 2\u003e process/log_files/Succinate_semialdehyde_dehydrogenase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Succinate_semialdehyde_dehydrogenase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:39:34.004371729+02:00",
+    "FinishTime": "2019-05-15T08:39:35.666989701+02:00",
+    "ExecTimeNS": 1662617889,
+    "OutFiles": {
+        "logfile": "training_log/Succinate_semialdehyde_dehydrogenase.log",
+        "modelname": "Succinate_semialdehyde_dehydrogenase",
+        "modelout": "models/Succinate_semialdehyde_dehydrogenase.cpsign",
+        "statusfile": "process/log_files/Succinate_semialdehyde_dehydrogenase.done"
+    },
+    "Upstream": {
+        "precomputed/Succinate_semialdehyde_dehydrogenase.precomp": {
+            "ID": "ty0d2occxpmgb8uqqlgl",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ID": "9pj5hursilrojd75lmtj",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Potassium_channel_subfamily_K_member_18.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Potassium_channel_subfamily_K_member_18.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Potassium_channel_subfamily_K_member_18.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Potassium_channel_subfamily_K_member_18 2\u003e process/log_files/Potassium_channel_subfamily_K_member_18.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Potassium_channel_subfamily_K_member_18.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:51:01.211054044+02:00",
+    "FinishTime": "2019-05-15T09:51:03.054969764+02:00",
+    "ExecTimeNS": 1843915702,
+    "OutFiles": {
+        "logfile": "training_log/Potassium_channel_subfamily_K_member_18.log",
+        "modelname": "Potassium_channel_subfamily_K_member_18",
+        "modelout": "models/Potassium_channel_subfamily_K_member_18.cpsign",
+        "statusfile": "process/log_files/Potassium_channel_subfamily_K_member_18.done"
+    },
+    "Upstream": {
+        "precomputed/Potassium_channel_subfamily_K_member_18.precomp": {
+            "ID": "pmiftray7mnvb6kca0zs",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

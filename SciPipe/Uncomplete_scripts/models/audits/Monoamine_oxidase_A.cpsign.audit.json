@@ -1,0 +1,30 @@
+{
+    "ID": "bi32iibs9ldgpq9ohfud",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Monoamine_oxidase_A.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Monoamine_oxidase_A.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Monoamine_oxidase_A.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Monoamine_oxidase_A 2\u003e process/log_files/Monoamine_oxidase_A.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Monoamine_oxidase_A.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:38:31.356310851+02:00",
+    "FinishTime": "2019-05-15T09:39:04.268552772+02:00",
+    "ExecTimeNS": 32912241886,
+    "OutFiles": {
+        "logfile": "training_log/Monoamine_oxidase_A.log",
+        "modelname": "Monoamine_oxidase_A",
+        "modelout": "models/Monoamine_oxidase_A.cpsign",
+        "statusfile": "process/log_files/Monoamine_oxidase_A.done"
+    },
+    "Upstream": {
+        "precomputed/Monoamine_oxidase_A.precomp": {
+            "ID": "6hy3071djmo7b01j89y5",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

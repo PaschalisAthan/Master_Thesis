@@ -1,0 +1,30 @@
+{
+    "ID": "hjv47e5icdga6qu1lqle",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Adenosine_kinase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Adenosine_kinase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Adenosine_kinase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Adenosine_kinase 2\u003e process/log_files/Adenosine_kinase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Adenosine_kinase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:44:54.70215502+02:00",
+    "FinishTime": "2019-05-15T08:45:01.616605192+02:00",
+    "ExecTimeNS": 6914450154,
+    "OutFiles": {
+        "logfile": "training_log/Adenosine_kinase.log",
+        "modelname": "Adenosine_kinase",
+        "modelout": "models/Adenosine_kinase.cpsign",
+        "statusfile": "process/log_files/Adenosine_kinase.done"
+    },
+    "Upstream": {
+        "precomputed/Adenosine_kinase.precomp": {
+            "ID": "nbz0hrmtfxt1jugelyzb",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

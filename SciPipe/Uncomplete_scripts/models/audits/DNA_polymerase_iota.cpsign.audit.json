@@ -1,0 +1,30 @@
+{
+    "ID": "pkoof9uvxh5nouhgii67",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/DNA_polymerase_iota.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/DNA_polymerase_iota.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/DNA_polymerase_iota.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name DNA_polymerase_iota 2\u003e process/log_files/DNA_polymerase_iota.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/DNA_polymerase_iota.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:05:15.690736579+02:00",
+    "FinishTime": "2019-05-15T09:05:17.423224305+02:00",
+    "ExecTimeNS": 1732487695,
+    "OutFiles": {
+        "logfile": "training_log/DNA_polymerase_iota.log",
+        "modelname": "DNA_polymerase_iota",
+        "modelout": "models/DNA_polymerase_iota.cpsign",
+        "statusfile": "process/log_files/DNA_polymerase_iota.done"
+    },
+    "Upstream": {
+        "precomputed/DNA_polymerase_iota.precomp": {
+            "ID": "rj7c3mljpxc8ttdbe65x",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

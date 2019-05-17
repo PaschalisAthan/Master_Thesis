@@ -1,0 +1,30 @@
+{
+    "ID": "h6vwa688sxje1krzryp7",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Neurokinin_3_receptor.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Neurokinin_3_receptor.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Neurokinin_3_receptor.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Neurokinin_3_receptor 2\u003e process/log_files/Neurokinin_3_receptor.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Neurokinin_3_receptor.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:40:50.863319715+02:00",
+    "FinishTime": "2019-05-15T09:41:05.943057907+02:00",
+    "ExecTimeNS": 15079738205,
+    "OutFiles": {
+        "logfile": "training_log/Neurokinin_3_receptor.log",
+        "modelname": "Neurokinin_3_receptor",
+        "modelout": "models/Neurokinin_3_receptor.cpsign",
+        "statusfile": "process/log_files/Neurokinin_3_receptor.done"
+    },
+    "Upstream": {
+        "precomputed/Neurokinin_3_receptor.precomp": {
+            "ID": "lr9ai2rj6lvo013jm0g7",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

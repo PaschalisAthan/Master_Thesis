@@ -1,0 +1,30 @@
+{
+    "ID": "wxpauj7bmfbaxoapcnl9",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Lysosomal_protective_protein.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Lysosomal_protective_protein.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Lysosomal_protective_protein.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Lysosomal_protective_protein 2\u003e process/log_files/Lysosomal_protective_protein.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Lysosomal_protective_protein.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:31:03.23006236+02:00",
+    "FinishTime": "2019-05-15T09:31:10.963092187+02:00",
+    "ExecTimeNS": 7733029793,
+    "OutFiles": {
+        "logfile": "training_log/Lysosomal_protective_protein.log",
+        "modelname": "Lysosomal_protective_protein",
+        "modelout": "models/Lysosomal_protective_protein.cpsign",
+        "statusfile": "process/log_files/Lysosomal_protective_protein.done"
+    },
+    "Upstream": {
+        "precomputed/Lysosomal_protective_protein.precomp": {
+            "ID": "anosq293pi1605x04p4l",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

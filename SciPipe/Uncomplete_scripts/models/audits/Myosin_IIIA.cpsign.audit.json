@@ -1,0 +1,30 @@
+{
+    "ID": "yduksealu9r87vzdu76s",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Myosin_IIIA.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Myosin_IIIA.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Myosin_IIIA.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Myosin_IIIA 2\u003e process/log_files/Myosin_IIIA.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Myosin_IIIA.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:40:03.029083791+02:00",
+    "FinishTime": "2019-05-15T09:40:05.189509891+02:00",
+    "ExecTimeNS": 2160425956,
+    "OutFiles": {
+        "logfile": "training_log/Myosin_IIIA.log",
+        "modelname": "Myosin_IIIA",
+        "modelout": "models/Myosin_IIIA.cpsign",
+        "statusfile": "process/log_files/Myosin_IIIA.done"
+    },
+    "Upstream": {
+        "precomputed/Myosin_IIIA.precomp": {
+            "ID": "ks72f0s7wzkiikdu07bd",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

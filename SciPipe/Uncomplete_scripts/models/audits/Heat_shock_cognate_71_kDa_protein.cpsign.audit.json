@@ -1,0 +1,30 @@
+{
+    "ID": "zta0oyxh5nasp5w741xl",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Heat_shock_cognate_71_kDa_protein.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Heat_shock_cognate_71_kDa_protein.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Heat_shock_cognate_71_kDa_protein.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Heat_shock_cognate_71_kDa_protein 2\u003e process/log_files/Heat_shock_cognate_71_kDa_protein.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Heat_shock_cognate_71_kDa_protein.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:20:41.472863157+02:00",
+    "FinishTime": "2019-05-15T09:20:43.207858997+02:00",
+    "ExecTimeNS": 1734995799,
+    "OutFiles": {
+        "logfile": "training_log/Heat_shock_cognate_71_kDa_protein.log",
+        "modelname": "Heat_shock_cognate_71_kDa_protein",
+        "modelout": "models/Heat_shock_cognate_71_kDa_protein.cpsign",
+        "statusfile": "process/log_files/Heat_shock_cognate_71_kDa_protein.done"
+    },
+    "Upstream": {
+        "precomputed/Heat_shock_cognate_71_kDa_protein.precomp": {
+            "ID": "gyvhjgvygi77r7dt1ios",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

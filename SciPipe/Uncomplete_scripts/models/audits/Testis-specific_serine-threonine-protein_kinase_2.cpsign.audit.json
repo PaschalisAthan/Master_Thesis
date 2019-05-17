@@ -1,0 +1,30 @@
+{
+    "ID": "8gh8fjf3xo8gvcyby46b",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Testis-specific_serine-threonine-protein_kinase_2.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Testis-specific_serine-threonine-protein_kinase_2.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Testis-specific_serine-threonine-protein_kinase_2.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Testis-specific_serine-threonine-protein_kinase_2 2\u003e process/log_files/Testis-specific_serine-threonine-protein_kinase_2.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Testis-specific_serine-threonine-protein_kinase_2.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:08:35.7792494+02:00",
+    "FinishTime": "2019-05-15T10:08:36.664385157+02:00",
+    "ExecTimeNS": 885135735,
+    "OutFiles": {
+        "logfile": "training_log/Testis-specific_serine-threonine-protein_kinase_2.log",
+        "modelname": "Testis-specific_serine-threonine-protein_kinase_2",
+        "modelout": "models/Testis-specific_serine-threonine-protein_kinase_2.cpsign",
+        "statusfile": "process/log_files/Testis-specific_serine-threonine-protein_kinase_2.done"
+    },
+    "Upstream": {
+        "precomputed/Testis-specific_serine-threonine-protein_kinase_2.precomp": {
+            "ID": "dafzar59t05bfof1350o",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

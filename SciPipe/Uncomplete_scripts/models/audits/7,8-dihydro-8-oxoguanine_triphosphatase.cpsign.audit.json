@@ -1,0 +1,30 @@
+{
+    "ID": "2wa3lducyydaxfqllclr",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/7,8-dihydro-8-oxoguanine_triphosphatase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/7,8-dihydro-8-oxoguanine_triphosphatase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/7,8-dihydro-8-oxoguanine_triphosphatase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name 7,8-dihydro-8-oxoguanine_triphosphatase 2\u003e process/log_files/7,8-dihydro-8-oxoguanine_triphosphatase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/7,8-dihydro-8-oxoguanine_triphosphatase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:39:54.709055718+02:00",
+    "FinishTime": "2019-05-15T08:39:56.722375915+02:00",
+    "ExecTimeNS": 2013320099,
+    "OutFiles": {
+        "logfile": "training_log/7,8-dihydro-8-oxoguanine_triphosphatase.log",
+        "modelname": "7,8-dihydro-8-oxoguanine_triphosphatase",
+        "modelout": "models/7,8-dihydro-8-oxoguanine_triphosphatase.cpsign",
+        "statusfile": "process/log_files/7,8-dihydro-8-oxoguanine_triphosphatase.done"
+    },
+    "Upstream": {
+        "precomputed/7,8-dihydro-8-oxoguanine_triphosphatase.precomp": {
+            "ID": "rsatqbj85wz76og9z61l",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

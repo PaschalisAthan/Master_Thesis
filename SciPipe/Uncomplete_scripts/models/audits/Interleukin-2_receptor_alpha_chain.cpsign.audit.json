@@ -1,0 +1,30 @@
+{
+    "ID": "43kmas1sb8f37ptpnhqg",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Interleukin-2_receptor_alpha_chain.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Interleukin-2_receptor_alpha_chain.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Interleukin-2_receptor_alpha_chain.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Interleukin-2_receptor_alpha_chain 2\u003e process/log_files/Interleukin-2_receptor_alpha_chain.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Interleukin-2_receptor_alpha_chain.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:27:10.276170279+02:00",
+    "FinishTime": "2019-05-15T09:27:11.760607408+02:00",
+    "ExecTimeNS": 1484437107,
+    "OutFiles": {
+        "logfile": "training_log/Interleukin-2_receptor_alpha_chain.log",
+        "modelname": "Interleukin-2_receptor_alpha_chain",
+        "modelout": "models/Interleukin-2_receptor_alpha_chain.cpsign",
+        "statusfile": "process/log_files/Interleukin-2_receptor_alpha_chain.done"
+    },
+    "Upstream": {
+        "precomputed/Interleukin-2_receptor_alpha_chain.precomp": {
+            "ID": "6xi36e47id7g0dycr9wr",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

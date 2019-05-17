@@ -1,0 +1,30 @@
+{
+    "ID": "6tq8o4x3b8kk4ju1sd80",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Cyclophilin_A.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Cyclophilin_A.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Cyclophilin_A.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Cyclophilin_A 2\u003e process/log_files/Cyclophilin_A.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Cyclophilin_A.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:03:30.751219902+02:00",
+    "FinishTime": "2019-05-15T09:03:34.371503657+02:00",
+    "ExecTimeNS": 3620283656,
+    "OutFiles": {
+        "logfile": "training_log/Cyclophilin_A.log",
+        "modelname": "Cyclophilin_A",
+        "modelout": "models/Cyclophilin_A.cpsign",
+        "statusfile": "process/log_files/Cyclophilin_A.done"
+    },
+    "Upstream": {
+        "precomputed/Cyclophilin_A.precomp": {
+            "ID": "vtbi93kxidtujlj36d47",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

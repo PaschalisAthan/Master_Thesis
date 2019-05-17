@@ -1,0 +1,30 @@
+{
+    "ID": "edbcxmyga17a55wa6fzs",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Voltage-gated_L-type_calcium_channel_alpha-1C_subunit 2\u003e process/log_files/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:19:11.104781017+02:00",
+    "FinishTime": "2019-05-15T10:19:14.566390945+02:00",
+    "ExecTimeNS": 3461609885,
+    "OutFiles": {
+        "logfile": "training_log/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.log",
+        "modelname": "Voltage-gated_L-type_calcium_channel_alpha-1C_subunit",
+        "modelout": "models/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.cpsign",
+        "statusfile": "process/log_files/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.done"
+    },
+    "Upstream": {
+        "precomputed/Voltage-gated_L-type_calcium_channel_alpha-1C_subunit.precomp": {
+            "ID": "u7vu9mkguswhgp7t3iiq",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

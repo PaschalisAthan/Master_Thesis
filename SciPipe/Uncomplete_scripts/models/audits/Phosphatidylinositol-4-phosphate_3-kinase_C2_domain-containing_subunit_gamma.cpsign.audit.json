@@ -1,0 +1,30 @@
+{
+    "ID": "v1ca6zufxum7dj5h587c",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma 2\u003e process/log_files/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:47:19.590312318+02:00",
+    "FinishTime": "2019-05-15T09:47:21.288101512+02:00",
+    "ExecTimeNS": 1697789066,
+    "OutFiles": {
+        "logfile": "training_log/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.log",
+        "modelname": "Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma",
+        "modelout": "models/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.cpsign",
+        "statusfile": "process/log_files/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.done"
+    },
+    "Upstream": {
+        "precomputed/Phosphatidylinositol-4-phosphate_3-kinase_C2_domain-containing_subunit_gamma.precomp": {
+            "ID": "ck7hbsa58xu43at84ngl",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

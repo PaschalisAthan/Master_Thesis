@@ -1,0 +1,30 @@
+{
+    "ID": "48ymr5ek0avjfkqqio3a",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Peptide_N-myristoyltransferase_2.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Peptide_N-myristoyltransferase_2.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Peptide_N-myristoyltransferase_2.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Peptide_N-myristoyltransferase_2 2\u003e process/log_files/Peptide_N-myristoyltransferase_2.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Peptide_N-myristoyltransferase_2.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:46:36.440656455+02:00",
+    "FinishTime": "2019-05-15T09:46:38.079775428+02:00",
+    "ExecTimeNS": 1639118916,
+    "OutFiles": {
+        "logfile": "training_log/Peptide_N-myristoyltransferase_2.log",
+        "modelname": "Peptide_N-myristoyltransferase_2",
+        "modelout": "models/Peptide_N-myristoyltransferase_2.cpsign",
+        "statusfile": "process/log_files/Peptide_N-myristoyltransferase_2.done"
+    },
+    "Upstream": {
+        "precomputed/Peptide_N-myristoyltransferase_2.precomp": {
+            "ID": "tdlx032fou7mp0qnqk8u",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ID": "xe4s8o2oflhay3z3kpnm",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Beta-glucocerebrosidase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Beta-glucocerebrosidase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Beta-glucocerebrosidase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Beta-glucocerebrosidase 2\u003e process/log_files/Beta-glucocerebrosidase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Beta-glucocerebrosidase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:48:50.166424155+02:00",
+    "FinishTime": "2019-05-15T08:48:55.20105662+02:00",
+    "ExecTimeNS": 5034632307,
+    "OutFiles": {
+        "logfile": "training_log/Beta-glucocerebrosidase.log",
+        "modelname": "Beta-glucocerebrosidase",
+        "modelout": "models/Beta-glucocerebrosidase.cpsign",
+        "statusfile": "process/log_files/Beta-glucocerebrosidase.done"
+    },
+    "Upstream": {
+        "precomputed/Beta-glucocerebrosidase.precomp": {
+            "ID": "0rqxhko8e4goysns4h44",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

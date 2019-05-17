@@ -1,0 +1,30 @@
+{
+    "ID": "0hggncnihegf4ewou2z4",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/BR_serine-threonine-protein_kinase_1.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/BR_serine-threonine-protein_kinase_1.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/BR_serine-threonine-protein_kinase_1.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name BR_serine-threonine-protein_kinase_1 2\u003e process/log_files/BR_serine-threonine-protein_kinase_1.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/BR_serine-threonine-protein_kinase_1.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:48:19.809890207+02:00",
+    "FinishTime": "2019-05-15T08:48:21.640296725+02:00",
+    "ExecTimeNS": 1830406497,
+    "OutFiles": {
+        "logfile": "training_log/BR_serine-threonine-protein_kinase_1.log",
+        "modelname": "BR_serine-threonine-protein_kinase_1",
+        "modelout": "models/BR_serine-threonine-protein_kinase_1.cpsign",
+        "statusfile": "process/log_files/BR_serine-threonine-protein_kinase_1.done"
+    },
+    "Upstream": {
+        "precomputed/BR_serine-threonine-protein_kinase_1.precomp": {
+            "ID": "qm4i07wsrpo4iqkxzcl2",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

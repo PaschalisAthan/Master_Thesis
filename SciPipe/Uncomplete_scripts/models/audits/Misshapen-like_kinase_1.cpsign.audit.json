@@ -1,0 +1,30 @@
+{
+    "ID": "m8dncuvh7gpxmn5qe7cx",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Misshapen-like_kinase_1.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Misshapen-like_kinase_1.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Misshapen-like_kinase_1.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Misshapen-like_kinase_1 2\u003e process/log_files/Misshapen-like_kinase_1.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Misshapen-like_kinase_1.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:37:54.567828667+02:00",
+    "FinishTime": "2019-05-15T09:37:56.827288047+02:00",
+    "ExecTimeNS": 2259459349,
+    "OutFiles": {
+        "logfile": "training_log/Misshapen-like_kinase_1.log",
+        "modelname": "Misshapen-like_kinase_1",
+        "modelout": "models/Misshapen-like_kinase_1.cpsign",
+        "statusfile": "process/log_files/Misshapen-like_kinase_1.done"
+    },
+    "Upstream": {
+        "precomputed/Misshapen-like_kinase_1.precomp": {
+            "ID": "30v6okdeeozia92g2wpf",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

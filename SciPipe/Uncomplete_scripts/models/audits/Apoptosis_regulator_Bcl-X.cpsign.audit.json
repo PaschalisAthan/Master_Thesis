@@ -1,0 +1,30 @@
+{
+    "ID": "saji4ftirots5uplqt7q",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Apoptosis_regulator_Bcl-X.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Apoptosis_regulator_Bcl-X.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Apoptosis_regulator_Bcl-X.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Apoptosis_regulator_Bcl-X 2\u003e process/log_files/Apoptosis_regulator_Bcl-X.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Apoptosis_regulator_Bcl-X.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:47:34.510970412+02:00",
+    "FinishTime": "2019-05-15T08:47:46.903887025+02:00",
+    "ExecTimeNS": 12392916640,
+    "OutFiles": {
+        "logfile": "training_log/Apoptosis_regulator_Bcl-X.log",
+        "modelname": "Apoptosis_regulator_Bcl-X",
+        "modelout": "models/Apoptosis_regulator_Bcl-X.cpsign",
+        "statusfile": "process/log_files/Apoptosis_regulator_Bcl-X.done"
+    },
+    "Upstream": {
+        "precomputed/Apoptosis_regulator_Bcl-X.precomp": {
+            "ID": "nzifs7d2e8wehhd4rgcg",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

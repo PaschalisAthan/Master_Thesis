@@ -1,0 +1,30 @@
+{
+    "ID": "e8gnpz5wqsr3whz88mml",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Transient_receptor_potential_cation_channel_subfamily_M_member_6.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Transient_receptor_potential_cation_channel_subfamily_M_member_6.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Transient_receptor_potential_cation_channel_subfamily_M_member_6.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Transient_receptor_potential_cation_channel_subfamily_M_member_6 2\u003e process/log_files/Transient_receptor_potential_cation_channel_subfamily_M_member_6.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Transient_receptor_potential_cation_channel_subfamily_M_member_6.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:09:40.177974455+02:00",
+    "FinishTime": "2019-05-15T10:09:41.480575102+02:00",
+    "ExecTimeNS": 1302600601,
+    "OutFiles": {
+        "logfile": "training_log/Transient_receptor_potential_cation_channel_subfamily_M_member_6.log",
+        "modelname": "Transient_receptor_potential_cation_channel_subfamily_M_member_6",
+        "modelout": "models/Transient_receptor_potential_cation_channel_subfamily_M_member_6.cpsign",
+        "statusfile": "process/log_files/Transient_receptor_potential_cation_channel_subfamily_M_member_6.done"
+    },
+    "Upstream": {
+        "precomputed/Transient_receptor_potential_cation_channel_subfamily_M_member_6.precomp": {
+            "ID": "fqvoe2cziakvvtg34ti1",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

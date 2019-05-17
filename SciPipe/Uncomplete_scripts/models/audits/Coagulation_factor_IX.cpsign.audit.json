@@ -1,0 +1,30 @@
+{
+    "ID": "z21lfcey021vue8satag",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Coagulation_factor_IX.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Coagulation_factor_IX.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Coagulation_factor_IX.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Coagulation_factor_IX 2\u003e process/log_files/Coagulation_factor_IX.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Coagulation_factor_IX.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:01:49.526845034+02:00",
+    "FinishTime": "2019-05-15T09:01:59.834298999+02:00",
+    "ExecTimeNS": 10307453958,
+    "OutFiles": {
+        "logfile": "training_log/Coagulation_factor_IX.log",
+        "modelname": "Coagulation_factor_IX",
+        "modelout": "models/Coagulation_factor_IX.cpsign",
+        "statusfile": "process/log_files/Coagulation_factor_IX.done"
+    },
+    "Upstream": {
+        "precomputed/Coagulation_factor_IX.precomp": {
+            "ID": "55270i7iqjuv4gyjnxxm",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

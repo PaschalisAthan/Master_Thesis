@@ -1,0 +1,30 @@
+{
+    "ID": "fwsc3p9hsvku4e9963xh",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Renal_dipeptidase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Renal_dipeptidase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Renal_dipeptidase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Renal_dipeptidase 2\u003e process/log_files/Renal_dipeptidase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Renal_dipeptidase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:54:02.779091834+02:00",
+    "FinishTime": "2019-05-15T09:54:04.6071373+02:00",
+    "ExecTimeNS": 1828045402,
+    "OutFiles": {
+        "logfile": "training_log/Renal_dipeptidase.log",
+        "modelname": "Renal_dipeptidase",
+        "modelout": "models/Renal_dipeptidase.cpsign",
+        "statusfile": "process/log_files/Renal_dipeptidase.done"
+    },
+    "Upstream": {
+        "precomputed/Renal_dipeptidase.precomp": {
+            "ID": "lxpqubn2vehrs8jsyjhz",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

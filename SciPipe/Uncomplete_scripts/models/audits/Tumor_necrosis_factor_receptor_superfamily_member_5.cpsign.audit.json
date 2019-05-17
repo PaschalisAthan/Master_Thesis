@@ -1,0 +1,30 @@
+{
+    "ID": "4be5yh9j1kdky4x64ln4",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Tumor_necrosis_factor_receptor_superfamily_member_5.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Tumor_necrosis_factor_receptor_superfamily_member_5.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Tumor_necrosis_factor_receptor_superfamily_member_5.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Tumor_necrosis_factor_receptor_superfamily_member_5 2\u003e process/log_files/Tumor_necrosis_factor_receptor_superfamily_member_5.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Tumor_necrosis_factor_receptor_superfamily_member_5.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:10:25.987996937+02:00",
+    "FinishTime": "2019-05-15T10:10:26.992216524+02:00",
+    "ExecTimeNS": 1004219552,
+    "OutFiles": {
+        "logfile": "training_log/Tumor_necrosis_factor_receptor_superfamily_member_5.log",
+        "modelname": "Tumor_necrosis_factor_receptor_superfamily_member_5",
+        "modelout": "models/Tumor_necrosis_factor_receptor_superfamily_member_5.cpsign",
+        "statusfile": "process/log_files/Tumor_necrosis_factor_receptor_superfamily_member_5.done"
+    },
+    "Upstream": {
+        "precomputed/Tumor_necrosis_factor_receptor_superfamily_member_5.precomp": {
+            "ID": "nlv20oww3x5njqcvpv1j",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ID": "dds7ud4xek2dmarj0h3y",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/MAP_kinase_p38_alpha.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/MAP_kinase_p38_alpha.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/MAP_kinase_p38_alpha.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name MAP_kinase_p38_alpha 2\u003e process/log_files/MAP_kinase_p38_alpha.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/MAP_kinase_p38_alpha.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:31:24.924379824+02:00",
+    "FinishTime": "2019-05-15T09:35:29.911914104+02:00",
+    "ExecTimeNS": 244987534099,
+    "OutFiles": {
+        "logfile": "training_log/MAP_kinase_p38_alpha.log",
+        "modelname": "MAP_kinase_p38_alpha",
+        "modelout": "models/MAP_kinase_p38_alpha.cpsign",
+        "statusfile": "process/log_files/MAP_kinase_p38_alpha.done"
+    },
+    "Upstream": {
+        "precomputed/MAP_kinase_p38_alpha.precomp": {
+            "ID": "c42w82e0dmessyw9ths0",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

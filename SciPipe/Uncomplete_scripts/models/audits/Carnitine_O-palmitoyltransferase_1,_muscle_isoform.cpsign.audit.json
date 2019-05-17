@@ -1,0 +1,30 @@
+{
+    "ID": "4hu16nx01998arbylxp7",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Carnitine_O-palmitoyltransferase_1,_muscle_isoform 2\u003e process/log_files/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:58:25.543897677+02:00",
+    "FinishTime": "2019-05-15T08:58:28.990659979+02:00",
+    "ExecTimeNS": 3446762292,
+    "OutFiles": {
+        "logfile": "training_log/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.log",
+        "modelname": "Carnitine_O-palmitoyltransferase_1,_muscle_isoform",
+        "modelout": "models/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.cpsign",
+        "statusfile": "process/log_files/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.done"
+    },
+    "Upstream": {
+        "precomputed/Carnitine_O-palmitoyltransferase_1,_muscle_isoform.precomp": {
+            "ID": "gz8pd9or0gnh8szn6emp",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

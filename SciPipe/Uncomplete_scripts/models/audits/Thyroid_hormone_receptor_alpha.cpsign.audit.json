@@ -1,0 +1,30 @@
+{
+    "ID": "yjx09svqgm0dhcxbl053",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Thyroid_hormone_receptor_alpha.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Thyroid_hormone_receptor_alpha.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Thyroid_hormone_receptor_alpha.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Thyroid_hormone_receptor_alpha 2\u003e process/log_files/Thyroid_hormone_receptor_alpha.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Thyroid_hormone_receptor_alpha.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:08:59.379150499+02:00",
+    "FinishTime": "2019-05-15T10:09:05.226325543+02:00",
+    "ExecTimeNS": 5847175025,
+    "OutFiles": {
+        "logfile": "training_log/Thyroid_hormone_receptor_alpha.log",
+        "modelname": "Thyroid_hormone_receptor_alpha",
+        "modelout": "models/Thyroid_hormone_receptor_alpha.cpsign",
+        "statusfile": "process/log_files/Thyroid_hormone_receptor_alpha.done"
+    },
+    "Upstream": {
+        "precomputed/Thyroid_hormone_receptor_alpha.precomp": {
+            "ID": "ck8cs0a83kyvch150xx9",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

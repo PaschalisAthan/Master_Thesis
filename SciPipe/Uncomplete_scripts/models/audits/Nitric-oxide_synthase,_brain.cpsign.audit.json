@@ -1,0 +1,30 @@
+{
+    "ID": "hww0djcyekal9c9wk0iq",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Nitric-oxide_synthase,_brain.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Nitric-oxide_synthase,_brain.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Nitric-oxide_synthase,_brain.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Nitric-oxide_synthase,_brain 2\u003e process/log_files/Nitric-oxide_synthase,_brain.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Nitric-oxide_synthase,_brain.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:42:17.819246165+02:00",
+    "FinishTime": "2019-05-15T09:42:28.006368414+02:00",
+    "ExecTimeNS": 10187122237,
+    "OutFiles": {
+        "logfile": "training_log/Nitric-oxide_synthase,_brain.log",
+        "modelname": "Nitric-oxide_synthase,_brain",
+        "modelout": "models/Nitric-oxide_synthase,_brain.cpsign",
+        "statusfile": "process/log_files/Nitric-oxide_synthase,_brain.done"
+    },
+    "Upstream": {
+        "precomputed/Nitric-oxide_synthase,_brain.precomp": {
+            "ID": "uf1kwcb18szbqmjf4x1p",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

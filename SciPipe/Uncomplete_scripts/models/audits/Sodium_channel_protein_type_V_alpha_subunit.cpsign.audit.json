@@ -1,0 +1,30 @@
+{
+    "ID": "ewxei50g0o1l94lw6xde",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Sodium_channel_protein_type_V_alpha_subunit.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Sodium_channel_protein_type_V_alpha_subunit.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Sodium_channel_protein_type_V_alpha_subunit.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Sodium_channel_protein_type_V_alpha_subunit 2\u003e process/log_files/Sodium_channel_protein_type_V_alpha_subunit.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Sodium_channel_protein_type_V_alpha_subunit.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:05:44.717954938+02:00",
+    "FinishTime": "2019-05-15T10:05:53.015979445+02:00",
+    "ExecTimeNS": 8298024463,
+    "OutFiles": {
+        "logfile": "training_log/Sodium_channel_protein_type_V_alpha_subunit.log",
+        "modelname": "Sodium_channel_protein_type_V_alpha_subunit",
+        "modelout": "models/Sodium_channel_protein_type_V_alpha_subunit.cpsign",
+        "statusfile": "process/log_files/Sodium_channel_protein_type_V_alpha_subunit.done"
+    },
+    "Upstream": {
+        "precomputed/Sodium_channel_protein_type_V_alpha_subunit.precomp": {
+            "ID": "zjk4sq77jrzcnktwf28h",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

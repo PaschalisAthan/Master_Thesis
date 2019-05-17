@@ -1,0 +1,30 @@
+{
+    "ID": "0tdu6xh4sjbn0k57u5g9",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Dihydroorotate_dehydrogenase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Dihydroorotate_dehydrogenase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Dihydroorotate_dehydrogenase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Dihydroorotate_dehydrogenase 2\u003e process/log_files/Dihydroorotate_dehydrogenase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Dihydroorotate_dehydrogenase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:06:18.458941744+02:00",
+    "FinishTime": "2019-05-15T09:06:25.951824069+02:00",
+    "ExecTimeNS": 7492882277,
+    "OutFiles": {
+        "logfile": "training_log/Dihydroorotate_dehydrogenase.log",
+        "modelname": "Dihydroorotate_dehydrogenase",
+        "modelout": "models/Dihydroorotate_dehydrogenase.cpsign",
+        "statusfile": "process/log_files/Dihydroorotate_dehydrogenase.done"
+    },
+    "Upstream": {
+        "precomputed/Dihydroorotate_dehydrogenase.precomp": {
+            "ID": "ti3u7gcdxfjvb2aiz341",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

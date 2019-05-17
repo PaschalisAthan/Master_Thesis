@@ -1,0 +1,30 @@
+{
+    "ID": "arauu82akq7afw1cyi4d",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Acyl-CoA_desaturase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Acyl-CoA_desaturase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Acyl-CoA_desaturase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Acyl-CoA_desaturase 2\u003e process/log_files/Acyl-CoA_desaturase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Acyl-CoA_desaturase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:41:43.459783915+02:00",
+    "FinishTime": "2019-05-15T08:41:51.88719039+02:00",
+    "ExecTimeNS": 8427406382,
+    "OutFiles": {
+        "logfile": "training_log/Acyl-CoA_desaturase.log",
+        "modelname": "Acyl-CoA_desaturase",
+        "modelout": "models/Acyl-CoA_desaturase.cpsign",
+        "statusfile": "process/log_files/Acyl-CoA_desaturase.done"
+    },
+    "Upstream": {
+        "precomputed/Acyl-CoA_desaturase.precomp": {
+            "ID": "4u23y36hdyfw0c71t0df",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

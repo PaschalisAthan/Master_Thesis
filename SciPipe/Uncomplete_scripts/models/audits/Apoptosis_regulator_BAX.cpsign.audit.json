@@ -1,0 +1,30 @@
+{
+    "ID": "nfrrdvll49rn13yu6btv",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Apoptosis_regulator_BAX.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Apoptosis_regulator_BAX.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Apoptosis_regulator_BAX.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Apoptosis_regulator_BAX 2\u003e process/log_files/Apoptosis_regulator_BAX.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Apoptosis_regulator_BAX.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T08:47:27.002770618+02:00",
+    "FinishTime": "2019-05-15T08:47:28.312209638+02:00",
+    "ExecTimeNS": 1309438988,
+    "OutFiles": {
+        "logfile": "training_log/Apoptosis_regulator_BAX.log",
+        "modelname": "Apoptosis_regulator_BAX",
+        "modelout": "models/Apoptosis_regulator_BAX.cpsign",
+        "statusfile": "process/log_files/Apoptosis_regulator_BAX.done"
+    },
+    "Upstream": {
+        "precomputed/Apoptosis_regulator_BAX.precomp": {
+            "ID": "h40pg9rh9fcwytcis1kb",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

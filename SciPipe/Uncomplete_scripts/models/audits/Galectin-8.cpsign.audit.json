@@ -1,0 +1,30 @@
+{
+    "ID": "pfyroimcs91l8m9n6hbi",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Galectin-8.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Galectin-8.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Galectin-8.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Galectin-8 2\u003e process/log_files/Galectin-8.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Galectin-8.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:17:42.629312533+02:00",
+    "FinishTime": "2019-05-15T09:17:43.569276383+02:00",
+    "ExecTimeNS": 939963792,
+    "OutFiles": {
+        "logfile": "training_log/Galectin-8.log",
+        "modelname": "Galectin-8",
+        "modelout": "models/Galectin-8.cpsign",
+        "statusfile": "process/log_files/Galectin-8.done"
+    },
+    "Upstream": {
+        "precomputed/Galectin-8.precomp": {
+            "ID": "sh9tbjo3tcpsul6fy7h0",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

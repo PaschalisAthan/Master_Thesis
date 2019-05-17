@@ -1,0 +1,30 @@
+{
+    "ID": "1v715s9g7ftqst09lgsi",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Deoxycytidine_kinase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Deoxycytidine_kinase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Deoxycytidine_kinase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Deoxycytidine_kinase 2\u003e process/log_files/Deoxycytidine_kinase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Deoxycytidine_kinase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:05:30.8261349+02:00",
+    "FinishTime": "2019-05-15T09:05:34.396763124+02:00",
+    "ExecTimeNS": 3570628182,
+    "OutFiles": {
+        "logfile": "training_log/Deoxycytidine_kinase.log",
+        "modelname": "Deoxycytidine_kinase",
+        "modelout": "models/Deoxycytidine_kinase.cpsign",
+        "statusfile": "process/log_files/Deoxycytidine_kinase.done"
+    },
+    "Upstream": {
+        "precomputed/Deoxycytidine_kinase.precomp": {
+            "ID": "d97ev6reaqzhua2gbr77",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "ID": "egzmgoe7fg0fvi255lub",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Complement_C1s.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Complement_C1s.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Complement_C1s.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Complement_C1s 2\u003e process/log_files/Complement_C1s.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Complement_C1s.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:02:04.733283829+02:00",
+    "FinishTime": "2019-05-15T09:02:07.415748972+02:00",
+    "ExecTimeNS": 2682464995,
+    "OutFiles": {
+        "logfile": "training_log/Complement_C1s.log",
+        "modelname": "Complement_C1s",
+        "modelout": "models/Complement_C1s.cpsign",
+        "statusfile": "process/log_files/Complement_C1s.done"
+    },
+    "Upstream": {
+        "precomputed/Complement_C1s.precomp": {
+            "ID": "6huj4aodtxi6oh7ciwzs",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

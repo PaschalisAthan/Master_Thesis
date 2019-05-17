@@ -1,0 +1,30 @@
+{
+    "ID": "p1hsr06rmw7axu2ats3u",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Pancreatic_alpha-amylase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Pancreatic_alpha-amylase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Pancreatic_alpha-amylase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Pancreatic_alpha-amylase 2\u003e process/log_files/Pancreatic_alpha-amylase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Pancreatic_alpha-amylase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:46:22.716017593+02:00",
+    "FinishTime": "2019-05-15T09:46:24.389972687+02:00",
+    "ExecTimeNS": 1673955085,
+    "OutFiles": {
+        "logfile": "training_log/Pancreatic_alpha-amylase.log",
+        "modelname": "Pancreatic_alpha-amylase",
+        "modelout": "models/Pancreatic_alpha-amylase.cpsign",
+        "statusfile": "process/log_files/Pancreatic_alpha-amylase.done"
+    },
+    "Upstream": {
+        "precomputed/Pancreatic_alpha-amylase.precomp": {
+            "ID": "3k0hkophc6d7dvotzi2h",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

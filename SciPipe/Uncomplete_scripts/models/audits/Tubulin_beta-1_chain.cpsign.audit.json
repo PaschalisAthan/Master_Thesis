@@ -1,0 +1,30 @@
+{
+    "ID": "9q287308jxtovjjq2h3h",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Tubulin_beta-1_chain.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Tubulin_beta-1_chain.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Tubulin_beta-1_chain.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Tubulin_beta-1_chain 2\u003e process/log_files/Tubulin_beta-1_chain.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Tubulin_beta-1_chain.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:10:20.953096402+02:00",
+    "FinishTime": "2019-05-15T10:10:22.684141872+02:00",
+    "ExecTimeNS": 1731045487,
+    "OutFiles": {
+        "logfile": "training_log/Tubulin_beta-1_chain.log",
+        "modelname": "Tubulin_beta-1_chain",
+        "modelout": "models/Tubulin_beta-1_chain.cpsign",
+        "statusfile": "process/log_files/Tubulin_beta-1_chain.done"
+    },
+    "Upstream": {
+        "precomputed/Tubulin_beta-1_chain.precomp": {
+            "ID": "e8nman54maphene48y6x",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

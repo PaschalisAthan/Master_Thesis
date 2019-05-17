@@ -1,0 +1,30 @@
+{
+    "ID": "y8o4k8epe63212668kic",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Serotonin_2c__5-HT2c__receptor.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Serotonin_2c__5-HT2c__receptor.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Serotonin_2c__5-HT2c__receptor.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Serotonin_2c__5-HT2c__receptor 2\u003e process/log_files/Serotonin_2c__5-HT2c__receptor.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Serotonin_2c__5-HT2c__receptor.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:02:01.046315873+02:00",
+    "FinishTime": "2019-05-15T10:04:45.840453926+02:00",
+    "ExecTimeNS": 164794137668,
+    "OutFiles": {
+        "logfile": "training_log/Serotonin_2c__5-HT2c__receptor.log",
+        "modelname": "Serotonin_2c__5-HT2c__receptor",
+        "modelout": "models/Serotonin_2c__5-HT2c__receptor.cpsign",
+        "statusfile": "process/log_files/Serotonin_2c__5-HT2c__receptor.done"
+    },
+    "Upstream": {
+        "precomputed/Serotonin_2c__5-HT2c__receptor.precomp": {
+            "ID": "24qh8jbkz9ovey3zh3my",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

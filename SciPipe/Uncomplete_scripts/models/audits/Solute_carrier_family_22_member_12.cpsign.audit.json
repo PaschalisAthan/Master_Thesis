@@ -1,0 +1,30 @@
+{
+    "ID": "uwinxifd01ej2meklmj3",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Solute_carrier_family_22_member_12.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Solute_carrier_family_22_member_12.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Solute_carrier_family_22_member_12.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Solute_carrier_family_22_member_12 2\u003e process/log_files/Solute_carrier_family_22_member_12.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Solute_carrier_family_22_member_12.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T10:06:05.345949675+02:00",
+    "FinishTime": "2019-05-15T10:06:10.26091093+02:00",
+    "ExecTimeNS": 4914961253,
+    "OutFiles": {
+        "logfile": "training_log/Solute_carrier_family_22_member_12.log",
+        "modelname": "Solute_carrier_family_22_member_12",
+        "modelout": "models/Solute_carrier_family_22_member_12.cpsign",
+        "statusfile": "process/log_files/Solute_carrier_family_22_member_12.done"
+    },
+    "Upstream": {
+        "precomputed/Solute_carrier_family_22_member_12.precomp": {
+            "ID": "9eyyc68uq7mnpoc8iodm",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

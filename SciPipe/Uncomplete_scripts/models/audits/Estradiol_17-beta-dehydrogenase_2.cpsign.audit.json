@@ -1,0 +1,30 @@
+{
+    "ID": "i49pou81x9rmsjeeaw79",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Estradiol_17-beta-dehydrogenase_2.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Estradiol_17-beta-dehydrogenase_2.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Estradiol_17-beta-dehydrogenase_2.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Estradiol_17-beta-dehydrogenase_2 2\u003e process/log_files/Estradiol_17-beta-dehydrogenase_2.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Estradiol_17-beta-dehydrogenase_2.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:13:03.048498824+02:00",
+    "FinishTime": "2019-05-15T09:13:07.925360856+02:00",
+    "ExecTimeNS": 4876862010,
+    "OutFiles": {
+        "logfile": "training_log/Estradiol_17-beta-dehydrogenase_2.log",
+        "modelname": "Estradiol_17-beta-dehydrogenase_2",
+        "modelout": "models/Estradiol_17-beta-dehydrogenase_2.cpsign",
+        "statusfile": "process/log_files/Estradiol_17-beta-dehydrogenase_2.done"
+    },
+    "Upstream": {
+        "precomputed/Estradiol_17-beta-dehydrogenase_2.precomp": {
+            "ID": "wvqw6is0pft04cz6bx01",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

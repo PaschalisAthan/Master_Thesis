@@ -1,0 +1,30 @@
+{
+    "ID": "cr9nfx2oh631uob3ybt4",
+    "ProcessName": "train_models",
+    "Command": "java -jar /home/paat9648/Train_model/cpsign-0.7.8.jar train \\\n\t\t\t\t\t\t\t\t\t\t\t\t--license /home/paat9648/Train_model/cpsign0x-std-building.license \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-in ../precomputed/Glucose-6-phosphatase.precomp \\\n\t\t\t\t\t\t\t\t\t\t\t\t--endpoint \"FLAG\" \\\n\t\t\t\t\t\t\t\t\t\t\t\t--labels [0,1] \\\n\t\t\t\t\t\t\t\t\t\t\t\t--predictor-type 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--sampling-strategy 4 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--nr-models 10 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--seed 1558636145182 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--impl 2 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--duplicates 5 \\\n\t\t\t\t\t\t\t\t\t\t\t\t--logfile training_log/Glucose-6-phosphatase.log \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-out models/Glucose-6-phosphatase.cpsign \\\n\t\t\t\t\t\t\t\t\t\t\t\t--model-name Glucose-6-phosphatase 2\u003e process/log_files/Glucose-6-phosphatase.done \u0026\u0026 echo 'Succeeded' \u003e process/log_files/Glucose-6-phosphatase.done; echo 'Foo'",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2019-05-15T09:19:01.000710226+02:00",
+    "FinishTime": "2019-05-15T09:19:02.602668206+02:00",
+    "ExecTimeNS": 1601957935,
+    "OutFiles": {
+        "logfile": "training_log/Glucose-6-phosphatase.log",
+        "modelname": "Glucose-6-phosphatase",
+        "modelout": "models/Glucose-6-phosphatase.cpsign",
+        "statusfile": "process/log_files/Glucose-6-phosphatase.done"
+    },
+    "Upstream": {
+        "precomputed/Glucose-6-phosphatase.precomp": {
+            "ID": "qpdny1cy36ihtthzby4v",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}
