@@ -1,0 +1,15 @@
+TRAINING
+[
+workflow.go
+balancing_targets.py
+db_targets.py
+database
+]
+
+All target (/all_target/*.tsv)
+Already balanced targets and targets that got balanced (/balanced_target/*.tsv)
+Only non-binding targets (/only_non_binding_targets/*.tsv)
+Models produced (/models/*.cpsign)
+Log files of the training process (/log/*.log)
+Log files of the training of each target (/training_log/*.log)
+Error status files (/models/log_files/*.done)
