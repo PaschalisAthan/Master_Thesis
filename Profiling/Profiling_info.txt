@@ -1,0 +1,13 @@
+PREDICTING
+[
+workflow_predict.go
+{database_to_be_predicted}.csv
+pred_file.py
+/models/
+]
+
+Raw dataset to predict (.csv)
+Edited dataset to predict (/files_toPredict/.tsv)
+Results from the predictions (/results/{folder}/)
+Log files of the prediction process (/logs/{folder}/*.log)
+Error status files (/process/{folder}/*.done)
